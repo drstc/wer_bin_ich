@@ -23,7 +23,7 @@ class _WhoAmIState extends State<WhoAmI> {
         child: MaterialApp(
           title: 'Wer bin ich?',
           theme: ThemeData(
-              primarySwatch: Colors.blue
+              primaryColor: Colors.pink[200]
           ),
           home: WhoAmIHome(),
         )
