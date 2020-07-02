@@ -1,7 +1,6 @@
 import 'package:scoped_model/scoped_model.dart';
 import 'dart:math';
 import 'package:shake/shake.dart';
-import 'dart:async';
 
 class WhoAmIModel extends Model {
  int punkte =0;
