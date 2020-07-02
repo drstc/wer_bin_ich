@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:wer_bin_ich/Model/WhoAmIModel.dart';
-
+import 'package:share/share.dart';
 
 class WhoAmIHome extends StatelessWidget{
   @override
@@ -21,7 +21,16 @@ class WhoAmIHome extends StatelessWidget{
                     ),
                   ]
               )
-      )
+
+      ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.pink[200],
+          onPressed: (){
+       Share.share("Ich habe 15 Punkte!");
+        },
+        tooltip: 'Increment',
+        child: Icon(Icons.share),
+    ),
         );
   }
 }
@@ -47,6 +56,8 @@ class _WhoAmIWords extends StatelessWidget {
           ),
         ],
       ),
+
     );
+
   }
 }

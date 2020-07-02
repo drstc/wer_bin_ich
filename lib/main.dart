@@ -21,12 +21,13 @@ class _WhoAmIState extends State<WhoAmI> {
     return ScopedModel<WhoAmIModel>(
         model: model,
         child: MaterialApp(
-          title: 'Wer bin ich?',
+          title: 'Was bin ich?',
           theme: ThemeData(
               primaryColor: Colors.pink[200]
           ),
           home: WhoAmIHome(),
         )
+
     );
   }
 
@@ -35,6 +36,7 @@ class _WhoAmIState extends State<WhoAmI> {
     // TODO: implement initState
     super.initState();
     model = WhoAmIModel();
+
   }
   @override
   void dispose() {
